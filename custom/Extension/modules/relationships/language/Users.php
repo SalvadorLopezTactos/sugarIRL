@@ -1,0 +1,6 @@
+<?php
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_DOCUMENTS_USERS_1_FROM_DOCUMENTS_TITLE'] = 'Documentos';
+$mod_strings['LBL_DOCUMENTS_USERS_1_FROM_USERS_TITLE'] = 'Documentos';
+$mod_strings['LBL_NOTES_USERS_1_FROM_NOTES_TITLE'] = 'Notas';
+$mod_strings['LBL_NOTES_USERS_1_FROM_USERS_TITLE'] = 'Notas';

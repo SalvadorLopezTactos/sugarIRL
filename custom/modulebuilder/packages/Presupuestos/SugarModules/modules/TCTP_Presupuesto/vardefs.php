@@ -1,0 +1,181 @@
+<?php
+
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+
+$dictionary['TCTP_Presupuesto'] = array(
+    'table' => 'tctp_presupuesto',
+    'audited' => true,
+    'activity_enabled' => false,
+    'duplicate_merge' => true,
+    'fields' => array (
+  'tct_tipo_presupuesto_ddw' => 
+  array (
+    'required' => false,
+    'name' => 'tct_tipo_presupuesto_ddw',
+    'vname' => 'LBL_TCT_TIPO_PRESUPUESTO_DDW',
+    'type' => 'enum',
+    'massupdate' => true,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => '1',
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'default' => 'Tradicional',
+    'calculated' => false,
+    'len' => 100,
+    'size' => '20',
+    'options' => 'tct_tipo_presupuesto_ddw_list',
+    'dependency' => false,
+  ),
+  'tct_monto_cur' => 
+  array (
+    'required' => false,
+    'name' => 'tct_monto_cur',
+    'vname' => 'LBL_TCT_MONTO_CUR',
+    'type' => 'currency',
+    'massupdate' => false,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => '1',
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'default' => 0,
+    'calculated' => false,
+    'len' => 26,
+    'size' => '20',
+    'enable_range_search' => false,
+    'precision' => 6,
+    'related_fields' => 
+    array (
+      0 => 'currency_id',
+      1 => 'base_rate',
+    ),
+  ),
+  'currency_id' => 
+  array (
+    'required' => false,
+    'name' => 'currency_id',
+    'vname' => 'LBL_CURRENCY_ID',
+    'type' => 'currency_id',
+    'massupdate' => false,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => 1,
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'calculated' => false,
+    'len' => 36,
+    'size' => '20',
+    'dbType' => 'id',
+    'studio' => false,
+    'function' => 'getCurrencies',
+    'function_bean' => 'Currencies',
+  ),
+  'base_rate' => 
+  array (
+    'required' => false,
+    'name' => 'base_rate',
+    'vname' => 'LBL_CURRENCY_RATE',
+    'type' => 'decimal',
+    'massupdate' => false,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => 1,
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'calculated' => false,
+    'len' => 26,
+    'size' => '20',
+    'enable_range_search' => false,
+    'precision' => 6,
+    'label' => 'LBL_CURRENCY_RATE',
+    'studio' => false,
+  ),
+  'tct_anio_ddw' => 
+  array (
+    'required' => false,
+    'name' => 'tct_anio_ddw',
+    'vname' => 'LBL_TCT_ANIO_DDW',
+    'type' => 'enum',
+    'massupdate' => true,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => '1',
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'default' => '2018',
+    'calculated' => false,
+    'len' => 100,
+    'size' => '20',
+    'options' => 'tct_anio_ddw_list',
+    'dependency' => false,
+  ),
+  'tct_periodo_ddw' => 
+  array (
+    'required' => false,
+    'name' => 'tct_periodo_ddw',
+    'vname' => 'LBL_TCT_PERIODO_DDW',
+    'type' => 'enum',
+    'massupdate' => true,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'importable' => 'true',
+    'duplicate_merge' => 'enabled',
+    'duplicate_merge_dom_value' => '1',
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'default' => 'Q1',
+    'calculated' => false,
+    'len' => 100,
+    'size' => '20',
+    'options' => 'tct_periodo_ddw_list',
+    'dependency' => false,
+  ),
+),
+    'relationships' => array (
+),
+    'optimistic_locking' => true,
+    'unified_search' => true,
+    'full_text_search' => true,
+);
+
+if (!class_exists('VardefManager')){
+}
+VardefManager::createVardef('TCTP_Presupuesto','TCTP_Presupuesto', array('basic','team_security','assignable','taggable'));

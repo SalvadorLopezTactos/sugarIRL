@@ -1,0 +1,30 @@
+<?php
+// created: 2018-01-12 11:20:30
+$app_list_strings['moduleListSingular']['Home'] = 'Inicio';
+$app_list_strings['moduleListSingular']['Contacts'] = 'Contacto';
+$app_list_strings['moduleListSingular']['Accounts'] = 'Cliente';
+$app_list_strings['moduleListSingular']['Opportunities'] = 'Oportunidad';
+$app_list_strings['moduleListSingular']['Cases'] = 'Caso';
+$app_list_strings['moduleListSingular']['Notes'] = 'Nota';
+$app_list_strings['moduleListSingular']['Calls'] = 'Llamada';
+$app_list_strings['moduleListSingular']['Emails'] = 'Correo electrónico';
+$app_list_strings['moduleListSingular']['Meetings'] = 'Reunión';
+$app_list_strings['moduleListSingular']['Tasks'] = 'Tarea';
+$app_list_strings['moduleListSingular']['Calendar'] = 'Calendario';
+$app_list_strings['moduleListSingular']['Leads'] = 'Cliente Potencial';
+$app_list_strings['moduleListSingular']['Contracts'] = 'Contrato';
+$app_list_strings['moduleListSingular']['Quotes'] = 'Presupuesto';
+$app_list_strings['moduleListSingular']['Products'] = 'Línea de la Oferta';
+$app_list_strings['moduleListSingular']['Reports'] = 'Informe';
+$app_list_strings['moduleListSingular']['Forecasts'] = 'Previsión';
+$app_list_strings['moduleListSingular']['Bugs'] = 'Incidencia';
+$app_list_strings['moduleListSingular']['Project'] = 'Proyecto';
+$app_list_strings['moduleListSingular']['Campaigns'] = 'Campaña';
+$app_list_strings['moduleListSingular']['Documents'] = 'Documento';
+$app_list_strings['moduleListSingular']['Prospects'] = 'Público Objetivo';
+$app_list_strings['moduleListSingular']['ProspectLists'] = 'Lista de Público Objetivo';
+$app_list_strings['moduleListSingular']['Tags'] = 'Etiqueta';
+$app_list_strings['moduleListSingular']['KBContents'] = 'Artículo de Base de Conocimiento';
+$app_list_strings['moduleListSingular']['TCT_Domicilios'] = 'Domicilio';
+$app_list_strings['moduleListSingular']['TCT_Sepomex'] = 'Sepomex';
+$app_list_strings['moduleListSingular']['TCT_ZipCode'] = 'ZipCode';
