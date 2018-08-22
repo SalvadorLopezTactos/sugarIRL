@@ -233,21 +233,23 @@ array (
                 'studio' => 'visible',
                 'label' => 'LBL_PARENTNAME',
               ),
-              11 => 'phone_office',
-              12 => 
+              11 => 'phone_fax',
+              12 => 'phone_office',
+              13 => 
               array (
                 'name' => 'phone_alternate',
                 'label' => 'LBL_PHONE_ALT',
               ),
-              13 => 
+              14 => 'email',
+              15 => 
               array (
                 'name' => 'estado_c',
                 'label' => 'TCT_ESTADO_LBL',
               ),
-              14 => 
+              16 => 
               array (
               ),
-              15 => 
+              17 => 
               array (
                 'name' => 'description',
                 'span' => 12,

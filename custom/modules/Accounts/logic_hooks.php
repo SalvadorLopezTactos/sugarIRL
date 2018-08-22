@@ -4,9 +4,25 @@
  $hook_version = 1; 
 $hook_array = Array(); 
 // position, file, function 
-$hook_array['before_save'] = Array(); 
-$hook_array['before_save'][] = Array('1','Convertir valores de campos a mayúsculas','custom/modules/Accounts/convertUpperCaseAccounts.php','convertUpperCase','convertUpper',);
+$hook_array['before_save'] = Array();
 $hook_array['before_save'][] = Array('1','workflow','include/workflow/WorkFlowHandler.php','WorkFlowHandler','WorkFlowHandler',);
+
+$hook_array['before_save'][] = Array(
+    '1',
+    'Convertir valores de campos a mayúsculas',
+    'custom/modules/Accounts/convertUpperCaseAccounts.php',
+    'convertUpperCase',
+    'convertUpper'
+);
+
+$hook_array['before_save'][] = Array(
+    '2',
+    'Genera peticiones REST para crear clientes, teléfonos y domicilios',
+    'custom/modules/Accounts/Integrations.php',
+    'Integrations',
+    'createRecords'
+);
+
 
 
 

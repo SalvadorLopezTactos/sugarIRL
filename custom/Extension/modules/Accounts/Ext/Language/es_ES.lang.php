@@ -37,3 +37,5 @@ $mod_strings['LBL_FIRSTNAME'] = 'Nombre:';
 $mod_strings['LBL_LASTNAME'] = 'Apellidos:';
 $mod_strings['LBL_NAME'] = 'Cliente:';
 $mod_strings['TCT_ESTADO_LBL'] = 'Estado';
+$mod_strings['LBL_FAX'] = 'Celular';
+$mod_strings['LBL_ANY_EMAIL'] = 'Correo electrónico';

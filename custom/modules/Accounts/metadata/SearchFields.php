@@ -191,4 +191,8 @@ $searchFields['Accounts'] = array (
   array (
     'query_type' => 'default',
   ),
+  'phone_fax' => 
+  array (
+    'query_type' => 'default',
+  ),
 );
