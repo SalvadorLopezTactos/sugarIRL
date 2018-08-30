@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es" class="blue">
+	<meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="http://192.168.90.11:8080/lysi-dashlets/./VAADIN/widgetsets/com.irl.lysi.MyAppWidgetset/com.irl.lysi.MyAppWidgetset.nocache.js?1459265572684"></script>
+	<link rel="stylesheet" href="http://192.168.90.11:8080/lysi-dashlets/./VAADIN/widgetsets/com.irl.lysi.MyAppWidgetset/csvalidation/styles.css"/>
+	<link rel="stylesheet" href="http://192.168.90.11:8080/lysi-dashlets/./VAADIN/widgetsets/com.irl.lysi.MyAppWidgetset/grid-util.css?v=1.0.1"/>
+	<script src="http://192.168.90.11:8080/lysi-dashlets/./VAADIN/widgetsets/com.irl.lysi.MyAppWidgetset/5547E2D3B72945950A2C6C8EECC1625E.cache.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://192.168.90.11:8080/lysi-dashlets/./VAADIN/themes/mytheme/styles.css?v=7.6.0"/>
+
+
+	<!--
+	 * Copyright (c) 2018, LegoSoft Soluciones
+	 * All rights reserved.
+	 *
+	 * Redistribution and use in source and binary forms, with or without
+	 * modification, are not permitted.
+	 *
+	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+	 * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+	 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+	 * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+	 * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+	 * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+	 * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+	 * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+	 * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+	 * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+	 * POSSIBILITY OF SUCH DAMAGE.
+	 *
+	 * Developed 2018 by LegoSoft www.legosoft.com.mx
+	 * dashlet1.php 1.0
+	 * author LegoSoft
+	 * date 28-Mayo-2018
+	-->
+
+	<style type="text/css">
+		@font-face {
+			font-family: Flaticon2;
+			font-weight: normal;
+			font-style: normal;
+			src: url('fonts/miscellaneous-elements/Flaticon.eot');
+			src: url('fonts/miscellaneous-elements/Flaticon.eot?#iefix') format('embedded-opentype'), url('fonts/miscellaneous-elements/Flaticon.woff') format('woff'), url('fonts/miscellaneous-elements/Flaticon.ttf') format('truetype'), url('fonts/miscellaneous-elements/Flaticon.svg#Flaticon2') format('svg');
+		}
+		@font-face {
+			font-family: Flaticon;
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/interface-icon-assets/Flaticon.eot);
+			src: url(fonts/interface-icon-assets/Flaticon.eot?#iefix) format("embedded-opentype"), url(fonts/interface-icon-assets/Flaticon.woff) format("woff"), url(fonts/interface-icon-assets/Flaticon.ttf) format("truetype"), url(fonts/interface-icon-assets/Flaticon.svg#Flaticon) format("svg");
+		}
+		@font-face {
+			font-family: Flaticon3;
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/ultimate/Flaticon.eot);
+			src: url(fonts/ultimate/Flaticon.eot?#iefix) format("embedded-opentype"), url(fonts/ultimate/Flaticon.woff) format("woff"), url(fonts/ultimate/Flaticon.ttf) format("truetype"), url(fonts/ultimate/Flaticon.svg#Flaticon3) format("svg");
+		}
+		@font-face {
+			font-family: "DaxBold";
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/dax/DaxBold.eot);
+			src: url(fonts/dax/DaxBold.eot?#iefix) format("embedded-opentype"), url(fonts/dax/DaxBold.woff) format("woff"), url(fonts/dax/DaxBold.ttf) format("truetype"), url(fonts/dax/DaxBold.svg#DaxBold) format("svg");
+		}
+		@font-face {
+			font-family: "dax-medium";
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/dax/dax-medium.eot);
+			src: url(fonts/dax/dax-medium.eot?#iefix) format("embedded-opentype"), url(fonts/dax/dax-medium.woff) format("woff"), url(fonts/dax/dax-medium.ttf) format("truetype"), url(fonts/dax/dax-medium.svg#dax-medium) format("svg");
+		}
+		@font-face {
+			font-family: "dax-regular";
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/dax/dax-regular-1361513784.eot);
+			src: url(fonts/dax/dax-regular-1361513784.eot?#iefix) format("embedded-opentype"), url(fonts/dax/dax-regular-1361513784.woff) format("woff"), url(fonts/dax/dax-regular-1361513784.ttf) format("truetype"), url(fonts/dax/dax-regular-1361513784.svg#dax-regular) format("svg");
+		}
+		@font-face {
+			font-family: FlatIconBusiness;
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/business/Flaticon.eot);
+			src: url(fonts/business/Flaticon.eot?#iefix) format("embedded-opentype"), url(fonts/business/Flaticon.woff) format("woff"), url(fonts/business/Flaticon.ttf) format("truetype"), url(fonts/business/Flaticon.svg#FlatIconBusiness) format("svg");
+		}
+		@font-face {
+			font-family: ThemeIcons;
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/vaadin/themeicons-webfont.eot);
+			src: url(fonts/vaadin/themeicons-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/vaadin/themeicons-webfont.woff) format("woff"), url(fonts/vaadin/themeicons-webfont.ttf) format("truetype"), url(fonts/vaadin/themeicons-webfont.svg#ThemeIcons) format("svg");
+		}
+		@font-face {
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			src: url(fonts/vaadin/fontawesome-webfont.eot);
+			src: url(fonts/vaadin/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/vaadin/fontawesome-webfont.woff) format("woff"), url(fonts/vaadin/fontawesome-webfont.ttf) format("truetype"), url(fonts/vaadin/fontawesome-webfont.svg#ThemeIcons) format("svg");
+		}
+
+		section {
+			display: none;
+		}
+		body.tasks section.tasks,
+		body.detail section.detail {
+			display: block;
+		}
+		.v-tooltip {
+			background-color: #323232;
+			background-color: rgba(50, 50, 50, 0.9);
+			-webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+			color: white;
+			padding: 5px 9px;
+			border-radius: 3px;
+			max-width: 35em;
+			overflow: hidden !important;
+			font-size: 14px;
+		}
+
+
+		.v-tooltip div[style*="width"] {
+			width: auto !important;
+		}
+
+
+		.v-tooltip .v-tooltip-text {
+			max-height: 10em;
+			overflow: auto;
+			margin-top: 10px;
+		}
+
+		.v-tooltip .v-errormessage[aria-hidden="true"] + .v-tooltip-text {
+			margin-top: 0;
+
+		}
+
+
+
+		.v-tooltip h1, .uni2Theme .v-tooltip h2, .uni2Theme .v-tooltip h3, .uni2Theme .v-tooltip h4 {
+
+			color: inherit;
+
+		}
+	    .marconegro{
+	        border: solid black 2px;
+		/*max-width:400px;
+		overflow:hidden;*/
+	    }
+	</style>
+	<body class="tasks">
+	<h1>HTML Integracion Sugar-LYSI</h1>
+		<!-- Se agregan las credenciales de Vaddin para las peticiones, permitiendo las cookies de sesión -->
+		<script>
+			XMLHttpRequest.prototype._originalSend = XMLHttpRequest.prototype.send;
+			var sendWithCredentials = function(data) {
+				this.withCredentials = true;
+				this._originalSend(data);
+			};
+			XMLHttpRequest.prototype.send = sendWithCredentials;
+		</script>
+
+		<!-- Carga Widgets de Vaadin así como el archivo bootstrats.js -->
+		<script type="text/javascript" src="http://192.168.90.11:8080/lysi-dashlets/VAADIN/vaadinBootstrap.js"></script>
+
+		<table align="center" border="0" style="width:100%;"  class="marconegro">
+			<tr valign="top">
+				<td>
+					<div id="cotizador" class="v-app">
+						<div class=" v-app-loading"></div>
+						<noscript>Se requiere habilitar javascript en el browser para visualizar el dashlet.
+						</noscript>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			<!-- Start the Vaadin application from $DASHLET_URL -->
+			window.onload = function() {
+				if (!window.vaadin) alert("Failed to load the Vaadin bootstrap");
+				vaadin.initApplication("cotizador", {
+					"browserDetailsUrl": "http://192.168.90.11:8080/lysi-dashlets/bpm/lysi/",
+					"serviceUrl": "http://192.168.90.11:8080/lysi-dashlets/bpm/lysi/",
+					"widgetset": "com.irl.lysi.MyAppWidgetset",
+					"theme": "mytheme",
+					"versionInfo": {"vaadinVersion": "7.6.0"},
+					"vaadinDir": "http://192.168.90.11:8080/lysi-dashlets/VAADIN/",
+					"heartbeatInterval": 3000,
+					"standalone": false,
+					"debug": false,
+
+				});
+
+				var object = '{ "guidSugar": "CL00000000000001", "nombreUsuario": "natan" }';
+				parametros = JSON.parse(object);
+				cargaCompleta = function () {
+					iniciarCotizador(parametros);
+				}
+			};
+		</script>
+	</body>
+</html>
+
